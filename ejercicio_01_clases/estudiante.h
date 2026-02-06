@@ -21,8 +21,8 @@ public:
     void actualizarNombre (string nuevoNombre);
     void actualizarCodigo (string nuevoCodigo);
     void actualizarEdad (int nuevaEdad);
-    void actualizar (float nuevoPromedio);
-    void actualizar (bool nuevoEstado);
+    void actualizarPromedio (float nuevoPromedio);
+    void actualizarActivo (bool nuevoActivo);
 
     // Métodos para mostrar
     void mostrarNombre();
