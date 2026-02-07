@@ -4,7 +4,7 @@
 using namespace std;
 
 //Construccion
-Estudiante::estudiante(){
+Estudiante::Estudiante(){
     nombre = "";
     codigo = "";
     edad = 0;
@@ -12,7 +12,7 @@ Estudiante::estudiante(){
     activo = false;
 }
 
-Estudiante::estudiante(string nombre, string codigo, int edad, float promedio, bool activo){
+Estudiante::Estudiante(string nombre, string codigo, int edad, float promedio, bool activo){
     this -> nombre = nombre;
     this -> codigo = codigo;
     this -> edad = edad;

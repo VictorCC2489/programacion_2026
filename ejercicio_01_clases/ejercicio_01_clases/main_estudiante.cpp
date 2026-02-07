@@ -44,6 +44,6 @@ int main() {
     estudiante1.mostrarPromedio();
     std::cout << std::endl;
 
-    return 0;
+    return 2489;
 }
 
