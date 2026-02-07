@@ -78,7 +78,7 @@ void Estudiante::mostrarInformacionCompleta(){
     mostrarEdad();
     mostrarPromedio();
     mostrarActivo();
-
+    calcularEstadoAcademico();
 }
 
 //funciones de retorno del valor
@@ -111,22 +111,22 @@ void Estudiante::incrementarEdad(){
 
 void Estudiante::calcularEstadoAcademico(){
     if (promedio < 6){
-        cout<<"Necesita mejorar"<<endl;
+        cout<<"Estado académico: Necesita mejorar"<<endl;
     }
 
     if (promedio >= 6 && promedio < 7){
-        cout<<"Regular"<<endl;
+        cout<<"Estado académico: Regular"<<endl;
     }
 
     if (promedio >= 7 && promedio < 8){
-        cout<<"Bueno"<<endl;
+        cout<<"Estado académico: Bueno"<<endl;
     }
 
     if (promedio >= 8 && promedio < 9){
-        cout<<"Muy bueno"<<endl;
+        cout<<"Estado académico: Muy bueno"<<endl;
     }
 
     if (promedio >= 9){
-        cout<<"Excelente"<<endl;
+        cout<<"Estado académico: Excelente"<<endl;
     }
 }
