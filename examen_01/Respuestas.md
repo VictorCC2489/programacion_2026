@@ -1,4 +1,6 @@
-## Examen 01
+## Examen 01 Respuestas
+
+---
 
 1. Define clase: Categoría que sirve para crear variables, es similar a un "struct" en el sentido que puede contener variables y funciones para tenerlos juntos en una sola variable u "objeto" pero con la principal diferencia del encapsulamiento de variables.
 
