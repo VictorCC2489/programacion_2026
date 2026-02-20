@@ -3,14 +3,15 @@
 
 using namespace std;
 // Constructor por defecto
-void Empleado::Empleado(){
+
+    Empleado::Empleado(){
     nombre = "";
     id = "";
     salarioBase = 0.0;
 }
 
 // Constructor con parámetros
-void Empleado::Empleado(string Crnombre, string Crid, float CrsalarioBase){
+    Empleado::Empleado(string Crnombre, string Crid, float CrsalarioBase){
     nombre = Crnombre;
     id = Crid;
     salarioBase = CrsalarioBase;

@@ -1,5 +1,5 @@
 # depslib dependency file v1.0
-1771621017 source:c:\users\ihiz2\programación_c++\code\programacion_2026\ejercicio_02_herencia\ejercicio_02_herencia\empleado.cpp
+1771630383 source:c:\users\ihiz2\programación_c++\code\programacion_2026\ejercicio_02_herencia\ejercicio_02_herencia\empleado.cpp
 	"empleado.h"
 	<iostream>
 
@@ -14,7 +14,7 @@
 	<string>
 	"empleado.h"
 
-1771625443 source:c:\users\ihiz2\programación_c++\code\programacion_2026\ejercicio_02_herencia\ejercicio_02_herencia\main_empleado.cpp
+1771630743 source:c:\users\ihiz2\programación_c++\code\programacion_2026\ejercicio_02_herencia\ejercicio_02_herencia\main_empleado.cpp
 	<iostream>
 	<locale>
 	"empleado_tiempo_completo.h"

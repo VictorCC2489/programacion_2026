@@ -3,6 +3,7 @@
 #include "empleado_tiempo_completo.h"
 
 int main() {
+    setlocale(LC_ALL, "en_US.UTF-8");
     std::cout << "=== Sistema de Gestión de Empleados ===" << std::endl;
     std::cout << std::endl;
 
@@ -31,5 +32,5 @@ int main() {
     etc2.mostrarInformacion();
     std::cout << "Salario total: " << etc2.calcularSalarioTotal() << std::endl;
 
-    return 0;
+    return 2489;
 }
