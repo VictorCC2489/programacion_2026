@@ -11,17 +11,22 @@ private:
 
 public:
     // Constructores
-    Coche();
-    Coche(std::string marca, std::string modelo, int anio, int numeroPuertas);
+    EmpleadoDTC();
+    EmpleadoDTC(string Crnombre, string Crid, float CrsalarioBase, int CrhorasSemanales, float Crbono);
 
     // Métodos para actualizar
-    void actualizarNumeroPuertas(int nuevoNumero);
+    void actualizarHorasSemanales(int novoHoras);
+    void actualizarBono (float novoBono);
 
     // Sobrescritura del método de la clase base
     void mostrarInformacion();
 
     // Getter
-    int obtenerNumeroPuertas();
+    int obtenerHorasSemanales();
+    float obtenerBono();
+
+    // Funciones de utilidad
+    float calcularSalarioTotal();
 };
 
 #endif

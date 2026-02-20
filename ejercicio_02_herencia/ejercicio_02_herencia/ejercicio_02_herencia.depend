@@ -3,14 +3,19 @@
 	"empleado.h"
 	<iostream>
 
-1770642310 c:\users\ihiz2\programación_c++\code\programacion_2026\ejercicio_02_herencia\ejercicio_02_herencia\empleado.h
+1771624297 c:\users\ihiz2\programación_c++\code\programacion_2026\ejercicio_02_herencia\ejercicio_02_herencia\empleado.h
 	<string>
 
-1771621017 source:c:\users\ihiz2\programación_c++\code\programacion_2026\ejercicio_02_herencia\ejercicio_02_herencia\empleado_tiempo_completo.cpp
+1771629820 source:c:\users\ihiz2\programación_c++\code\programacion_2026\ejercicio_02_herencia\ejercicio_02_herencia\empleado_tiempo_completo.cpp
 	"empleado_tiempo_completo.h"
 	<iostream>
 
-1771621076 c:\users\ihiz2\programación_c++\code\programacion_2026\ejercicio_02_herencia\ejercicio_02_herencia\empleado_tiempo_completo.h
+1771629558 c:\users\ihiz2\programación_c++\code\programacion_2026\ejercicio_02_herencia\ejercicio_02_herencia\empleado_tiempo_completo.h
 	<string>
 	"empleado.h"
+
+1771625443 source:c:\users\ihiz2\programación_c++\code\programacion_2026\ejercicio_02_herencia\ejercicio_02_herencia\main_empleado.cpp
+	<iostream>
+	<locale>
+	"empleado_tiempo_completo.h"
 

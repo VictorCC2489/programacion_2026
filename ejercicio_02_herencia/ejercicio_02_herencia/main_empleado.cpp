@@ -13,13 +13,13 @@ int main() {
     std::cout << std::endl;
 
     // Empleado a tiempo completo (constructor por defecto)
-    EmpleadoTiempoCompleto etc1;
+    EmpleadoDTC etc1;
     std::cout << "Empleado tiempo completo (constructor por defecto):" << std::endl;
     etc1.mostrarInformacion();
     std::cout << std::endl;
 
     // Empleado a tiempo completo (constructor con parámetros)
-    EmpleadoTiempoCompleto etc2("Carlos Ruiz", "EMP-002", 20000.0, 40, 2000.0);
+    EmpleadoDTC etc2("Carlos Ruiz", "EMP-002", 20000.0, 40, 2000.0);
     std::cout << "Empleado tiempo completo (constructor con parámetros):" << std::endl;
     etc2.mostrarInformacion();
     std::cout << "Salario total: " << etc2.calcularSalarioTotal() << std::endl;

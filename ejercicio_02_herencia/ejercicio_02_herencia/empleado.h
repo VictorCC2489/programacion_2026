@@ -13,7 +13,7 @@ protected:
 public:
     // Constructores
     Empleado();
-    Empleado(string nombre, string id, float salarioBase);
+    Empleado(string Crnombre, string Crid, float CrsalarioBase);
 
     // Métodos para actualizar
     void actualizarNombre(string novoNombre);
