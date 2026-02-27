@@ -6,7 +6,7 @@
 
 class Camion : public Vehiculo {
 private:
-    int cargaEstimada; //si se usara con uno o mas
+    int cargaEstimada; //si se usara con uno o mas remolques / vagones
 
 public:
     // Constructores

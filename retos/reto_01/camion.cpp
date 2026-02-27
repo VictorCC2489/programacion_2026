@@ -1,29 +1,29 @@
-#include "coche.h"
+#include "camion.h"
 #include <iostream>
 
 // Constructor por defecto: llama al constructor por defecto de Vehiculo
-Coche::Coche() : Vehiculo() {
-    numeroPuertas = 0;
+Camion::Camion() : Vehiculo() {
+    cargaEstimada = 0;
 }
 
 // Constructor con parámetros: pasa los datos del vehículo a la base
-Coche::Coche(std::string marca, std::string modelo, int anio, int numeroPuertas)
+Camion::Camion(std::string marca, std::string modelo, int anio, int cargaEstimada)
     : Vehiculo(marca, modelo, anio) {
-    this->numeroPuertas = numeroPuertas;
+    this->cargaEstimada = cargaEstimada;
 }
 
 // Método para actualizar
-void Coche::actualizarNumeroPuertas(int nuevoNumero) {
-    numeroPuertas = nuevoNumero;
+void Camion::actualizarCargaEstimada(int nuevaCarga){
+    cargaEstimada = nuevaCarga;
 }
 
 // Sobrescritura: reutiliza el método de la base y añade información del coche
-void Coche::mostrarInformacion() {
+void Camion::mostrarInformacion() {
     Vehiculo::mostrarInformacion();
-    std::cout << "Número de puertas: " << numeroPuertas << std::endl;
+    std::cout << "Remolques del camión: " << cargaEstimada << std::endl;
 }
 
 // Getter
-int Coche::obtenerNumeroPuertas() {
-    return numeroPuertas;
+int Camion::obtenerCargaEstimada() {
+    return cargaEstimada;
 }

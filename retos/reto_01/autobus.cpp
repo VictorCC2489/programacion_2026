@@ -1,4 +1,4 @@
-#include "coche.h"
+#include "autobus.h"
 #include <iostream>
 
 // Constructor por defecto: llama al constructor por defecto de Vehiculo

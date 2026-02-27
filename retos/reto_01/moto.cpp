@@ -1,29 +1,40 @@
-#include "coche.h"
+#include "moto.h"
 #include <iostream>
 
 // Constructor por defecto: llama al constructor por defecto de Vehiculo
-Coche::Coche() : Vehiculo() {
-    numeroPuertas = 0;
+Moto::Moto() : Vehiculo() {
+    cilindraje = 0;
 }
 
 // Constructor con parámetros: pasa los datos del vehículo a la base
-Coche::Coche(std::string marca, std::string modelo, int anio, int numeroPuertas)
+Moto::Moto(std::string marca, std::string modelo, int anio, int cilindraje)
     : Vehiculo(marca, modelo, anio) {
-    this->numeroPuertas = numeroPuertas;
+    this->cilindraje = cilindraje;
 }
 
 // Método para actualizar
-void Coche::actualizarNumeroPuertas(int nuevoNumero) {
-    numeroPuertas = nuevoNumero;
+void Moto::actualizarCilindraje(int nuevoCilindraje) {
+    cilindraje = nuevoCilindraje;
 }
 
 // Sobrescritura: reutiliza el método de la base y añade información del coche
-void Coche::mostrarInformacion() {
+void Moto::mostrarInformacion() {
     Vehiculo::mostrarInformacion();
-    std::cout << "Número de puertas: " << numeroPuertas << std::endl;
-}
+    std::cout << "Cilindraje: " << cilindraje << "cc o ";
+    if (cilindraje >= 100 && cilindraje <= 250){
+        std::cout << "cilindraje bajo" << std::endl;
+    }
+
+    if (cilindraje > 250 && cilindraje <= 600){
+        std::cout << "cilindraje medio" << std::endl;
+    }
+
+    if (cilindraje > 600){
+        std::cout << "cilindraje alto" << std::endl;
+    }
+    }
 
 // Getter
-int Coche::obtenerNumeroPuertas() {
-    return numeroPuertas;
+int Moto::obtenerCilindraje() {
+    return cilindraje;
 }
