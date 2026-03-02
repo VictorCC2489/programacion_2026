@@ -31,7 +31,7 @@ void Vehiculo::actualizarAnio(int nuevoAnio) {
     anio = nuevoAnio;
 }
 
-void Vehiculo::actualizarPlaca(int nuevaPlaca) {
+void Vehiculo::actualizarPlaca(string nuevaPlaca) {
     placa = nuevaPlaca;
 }
 
