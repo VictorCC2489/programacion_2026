@@ -1,71 +1,96 @@
-/*
- * Instrucciones de Compilación:
- *
- * Para compilar este programa, utiliza el siguiente comando:
- *
- *     g++ vehiculo.cpp coche.cpp main.cpp -o herencia
- *
- * O si prefieres usar la opción de estándar C++17:
- *
- *     g++ -std=c++17 vehiculo.cpp coche.cpp main.cpp -o herencia
- *
- * Para ejecutar el programa:
- *
- *     ./herencia
- */
-
 #include <iostream>
-#include <locale>
-#include "vehiculo.h"
 #include "coche.h"
+#include "moto.h"
+#include "camion.h"
+#include "autobus.h"
 
 using namespace std;
 
 int main() {
-    setlocale(LC_ALL, "en_US.UTF-8");
-    cout << "=== Ejemplo de herencia: Vehiculo y Coche ===" << endl;
-    cout << endl;
 
-    // Crear un vehículo (clase base)
-    Vehiculo vehiculo1("Ford", "F-150", 2019);
-    cout << "Vehículo 1 (clase base):" << endl;
-    vehiculo1.mostrarInformacion();
-    cout << endl;
+    // crear vehículos
+    Coche coche1("Toyota", "Corolla", 2020, 4);
+    coche1.actualizarPlaca("ABC-123");
 
-    // Crear un coche usando el constructor por defecto
-    Coche coche1;
-    cout << "Coche 1 (constructor por defecto):" << endl;
-    coche1.mostrarInformacion();
-    cout << endl;
+    Moto moto1("Yamaha", "R3", 2022, 321);
+    moto1.actualizarPlaca("MTR-456");
 
-    // Actualizar los valores del coche1 (hereda setters de Vehiculo + propio)
-    coche1.actualizarMarca("Toyota");
-    coche1.actualizarModelo("Corolla");
-    coche1.actualizarAnio(2022);
-    coche1.actualizarNumeroPuertas(4);
+    Camion camion1("Volvo", "FH16", 2018, 2);
+    camion1.actualizarPlaca("CAM-789");
 
-    cout << "Coche 1 después de actualizar:" << endl;
-    coche1.mostrarInformacion();
-    cout << endl;
+    Autobus autobus1("Mercedes", "Sprinter", 2021, "ADO");
+    autobus1.actualizarPlaca("BUS-321");
 
-    // Crear un coche usando el constructor con parámetros
-    Coche coche2("Honda", "Civic", 2020, 4);
-    cout << "Coche 2 (constructor con parámetros):" << endl;
-    coche2.mostrarInformacion();
-    cout << endl;
+    int opcion;
+    string nuevaPlaca;
 
-    // Demostrar que Coche hereda los getters de Vehiculo
-    cout << "Acceso a miembros heredados (Coche 2):" << endl;
-    cout << "  Marca (heredado): " << coche2.obtenerMarca() << endl;
-    cout << "  Modelo (heredado): " << coche2.obtenerModelo() << endl;
-    cout << "  Año (heredado): " << coche2.obtenerAnio() << endl;
-    cout << "  Puertas (propio): " << coche2.obtenerNumeroPuertas() << endl;
-    cout << endl;
+    do {
+        cout << "\n===== MENU =====\n";
+        cout << "1. Mostrar vehiculos\n";
+        cout << "2. Cambiar placa coche\n";
+        cout << "3. Cambiar placa moto\n";
+        cout << "4. Cambiar placa camion\n";
+        cout << "5. Cambiar placa autobus\n";
+        cout << "0. Salir\n";
+        cout << "Opcion: ";
+        cin >> opcion;
 
-    // Modificar solo el número de puertas del coche2
-    coche2.actualizarNumeroPuertas(2);
-    cout << "Coche 2 después de cambiar a 2 puertas:" << endl;
-    coche2.mostrarInformacion();
+        switch (opcion) {
+
+            case 1:
+                // mostrar informacion de todos los vehiculos
+                cout << "\n--- COCHE ---\n";
+                coche1.mostrarInformacion();
+
+                cout << "\n--- MOTO ---\n";
+                moto1.mostrarInformacion();
+
+                cout << "\n--- CAMION ---\n";
+                camion1.mostrarInformacion();
+
+                cout << "\n--- AUTOBUS ---\n";
+                autobus1.mostrarInformacion();
+                break;
+
+            case 2:
+                // Cambiar placa del coche
+                cout << "Nueva placa del coche: ";
+                cin >> nuevaPlaca;
+                coche1.actualizarPlaca(nuevaPlaca);
+                break;
+
+            case 3:
+                // Cambiar placa de la moto
+                cout << "Nueva placa de la moto: ";
+                cin >> nuevaPlaca;
+                moto1.actualizarPlaca(nuevaPlaca);
+                break;
+
+            case 4:
+                // Cambiar placa del camion
+                cout << "Nueva placa del camion: ";
+                cin >> nuevaPlaca;
+                camion1.actualizarPlaca(nuevaPlaca);
+                break;
+
+            case 5:
+                // Cambiar placa del autobus
+                cout << "Nueva placa del autobus: ";
+                cin >> nuevaPlaca;
+                autobus1.actualizarPlaca(nuevaPlaca);
+                break;
+
+            case 0:
+                // Salir del programa
+                cout << "Programa finalizado.\n";
+                break;
+
+            default:
+                cout << "Opcion invalida.\n";
+        }
+
+    } while (opcion != 0);
 
     return 0;
 }
+
