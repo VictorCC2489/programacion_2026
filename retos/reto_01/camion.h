@@ -4,6 +4,7 @@
 #include <string>
 #include "vehiculo.h"
 
+using namespace std;
 class Camion : public Vehiculo {
 private:
     int cargaEstimada; //si se usara con uno o mas remolques / vagones
@@ -11,7 +12,7 @@ private:
 public:
     // Constructores
     Camion();
-    Camion(std::string marca, std::string modelo, int anio, int cargaEstimada);
+    Camion(string marca, string modelo, int anio, int cargaEstimada);
 
     // Métodos para actualizar
     void actualizarCargaEstimada(int nuevaCarga);

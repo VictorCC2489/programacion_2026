@@ -2,33 +2,34 @@
 #define VEHICULO_H
 
 #include <string>
+using namespace std;
 
 class Vehiculo {
 protected:
-    std::string marca;
-    std::string modelo;
+    string marca;
+    string modelo;
     int anio;
-    std::string placa;
+    string placa;
 
 public:
     // Constructores
     Vehiculo();
-    Vehiculo(std::string marca, std::string modelo, int anio, std::string placa);
+    Vehiculo(string marca, string modelo, int anio, string placa);
 
     // Métodos para actualizar
-    void actualizarMarca(std::string nuevaMarca);
-    void actualizarModelo(std::string nuevoModelo);
+    void actualizarMarca(string nuevaMarca);
+    void actualizarModelo(string nuevoModelo);
     void actualizarAnio(int nuevoAnio);
-    void actualizarPlaca(std::string nuevaPlaca);
+    void actualizarPlaca(string nuevaPlaca);
 
     // Métodos para mostrar
     void mostrarInformacion();
 
     // Getters
-    std::string obtenerMarca();
-    std::string obtenerModelo();
+    string obtenerMarca();
+    string obtenerModelo();
     int obtenerAnio();
-    std::string obtenerPlaca();
+    string obtenerPlaca();
 };
 
 #endif // VEHICULO_H

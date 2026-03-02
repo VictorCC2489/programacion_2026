@@ -4,6 +4,7 @@
 #include <string>
 #include "vehiculo.h"
 
+using namespace std;
 class Autobus : public Vehiculo {
 private:
     int compania; //si es aty, ado, maya bus etc.
@@ -11,7 +12,7 @@ private:
 public:
     // Constructores
     Autobus();
-    Autobus (std::string marca, std::string modelo, int anio, int compania);
+    Autobus (string marca, string modelo, int anio, int compania);
 
     // Métodos para actualizar
     void actualizarCompania(int nuevaCompania);

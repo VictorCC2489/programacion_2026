@@ -4,6 +4,8 @@
 #include <string>
 #include "vehiculo.h"
 
+using namespace std;
+
 class Moto : public Vehiculo {
 private:
     int cilindraje; //imprimir bajo medio o alto y entre parentecis el total
@@ -11,7 +13,7 @@ private:
 public:
     // Constructores
     Moto();
-    Moto(std::string marca, std::string modelo, int anio, int cilindraje);
+    Moto(string marca, string modelo, int anio, int cilindraje);
 
     // Métodos para actualizar
     void actualizarCilindraje(int nuevoCilindraje);

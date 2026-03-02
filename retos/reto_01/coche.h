@@ -4,6 +4,7 @@
 #include <string>
 #include "vehiculo.h"
 
+using namespace std;
 class Coche : public Vehiculo {
 private:
     int numeroPuertas;
@@ -11,7 +12,7 @@ private:
 public:
     // Constructores
     Coche();
-    Coche(std::string marca, std::string modelo, int anio, int numeroPuertas);
+    Coche(string marca, string modelo, int anio, int numeroPuertas);
 
     // Métodos para actualizar
     void actualizarNumeroPuertas(int nuevoNumero);
