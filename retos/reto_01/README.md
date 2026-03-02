@@ -2,7 +2,10 @@
 
 
 Integrantes del equipo: 
-**Cocom Cab Victor Jesús
+
+*Cocom Cab Victor Jesús
+
 *Garcia Romero Jesús Dariel
+
 *Jiménez Cruz María del Carmen
 
