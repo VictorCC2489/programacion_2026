@@ -3,28 +3,28 @@
 
 using namespace std;
 // Constructor por defecto: llama al constructor por defecto de Vehiculo
-Coche::Coche() : Vehiculo() {
-    numeroPuertas = 0;
+Autobus::Autobus() : Vehiculo() {
+    compania = "";
 }
 
 // Constructor con parámetros: pasa los datos del vehículo a la base
-Coche::Coche(string marca, string modelo, int anio, int numeroPuertas)
+Autobus::Autobus(string marca, string modelo, int anio, string compania)
     : Vehiculo(marca, modelo, anio) {
-    this->numeroPuertas = numeroPuertas;
+    this->compania = compania;
 }
 
 // Método para actualizar
-void Coche::actualizarNumeroPuertas(int nuevoNumero) {
-    numeroPuertas = nuevoNumero;
+void Autobus::actualizarCompania(string nuevaCompania) {
+    compania = nuevaCompania;
 }
 
 // Sobrescritura: reutiliza el método de la base y añade información del coche
-void Coche::mostrarInformacion() {
+void Autobus::mostrarInformacion() {
     Vehiculo::mostrarInformacion();
-    cout << "Número de puertas: " << numeroPuertas << endl;
+    cout << "Compania: " << compania << endl;
 }
 
 // Getter
-int Coche::obtenerNumeroPuertas() {
-    return numeroPuertas;
+string Autobus::obtenerCompania() {
+    return compania;
 }

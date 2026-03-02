@@ -7,21 +7,21 @@
 using namespace std;
 class Autobus : public Vehiculo {
 private:
-    int compania; //si es aty, ado, maya bus etc.
+    string compania; //si es aty, ado, maya bus etc.
 
 public:
     // Constructores
     Autobus();
-    Autobus (string marca, string modelo, int anio, int compania);
+    Autobus (string marca, string modelo, int anio, string compania);
 
     // Métodos para actualizar
-    void actualizarCompania(int nuevaCompania);
+    void actualizarCompania(string nuevaCompania);
 
     // Sobrescritura del método de la clase base
     void mostrarInformacion();
 
     // Getter
-    int obtenerCompania();
+    string obtenerCompania();
 };
 
 #endif // COCHE_H
