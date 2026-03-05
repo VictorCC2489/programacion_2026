@@ -9,10 +9,10 @@ using namespace std;
 int main() {
 
     // crear vehículos
-    Coche coche1("Toyota", "Corolla", 2020, 4);
+    Coche coche1("Toyota", "Corolla", 2020, "4", 4);
     coche1.actualizarPlaca("ABC-123");
 
-    Moto moto1("Yamaha", "R3", 2022, 321);
+    Moto moto1("Yamaha", "R3", 2022, "4", 321);
     moto1.actualizarPlaca("MTR-456");
 
     Camion camion1("Volvo", "FH16", 2018, 2);
