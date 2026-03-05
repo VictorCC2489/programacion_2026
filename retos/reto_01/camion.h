@@ -12,7 +12,7 @@ private:
 public:
     // Constructores
     Camion();
-    Camion(string marca, string modelo, int anio, int cargaEstimada);
+    Camion(string marca, string modelo, int anio, string placa, int cargaEstimada);
 
     // Métodos para actualizar
     void actualizarCargaEstimada(int nuevaCarga);

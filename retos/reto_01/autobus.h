@@ -12,7 +12,7 @@ private:
 public:
     // Constructores
     Autobus();
-    Autobus (string marca, string modelo, int anio, string compania);
+    Autobus (string marca, string modelo, int anio, string placa, string compania);
 
     // Métodos para actualizar
     void actualizarCompania(string nuevaCompania);
@@ -24,4 +24,4 @@ public:
     string obtenerCompania();
 };
 
-#endif // COCHE_H
+#endif // AUTOBUS_H

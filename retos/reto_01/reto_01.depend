@@ -1,0 +1,69 @@
+# depslib dependency file v1.0
+1772688275 source:c:\users\ihiz2\programación_c++\code\programacion_2026\retos\reto_01\autobus.cpp
+	"autobus.h"
+	<iostream>
+
+1772688248 c:\users\ihiz2\programación_c++\code\programacion_2026\retos\reto_01\autobus.h
+	<string>
+	"vehiculo.h"
+
+1772687999 c:\users\ihiz2\programación_c++\code\programacion_2026\retos\reto_01\vehiculo.h
+	<string>
+
+1772688216 source:c:\users\ihiz2\programación_c++\code\programacion_2026\retos\reto_01\camion.cpp
+	"camion.h"
+	<iostream>
+
+1772688189 c:\users\ihiz2\programación_c++\code\programacion_2026\retos\reto_01\camion.h
+	<string>
+	"vehiculo.h"
+
+1772688160 source:c:\users\ihiz2\programación_c++\code\programacion_2026\retos\reto_01\coche.cpp
+	"coche.h"
+	<iostream>
+
+1772688134 c:\users\ihiz2\programación_c++\code\programacion_2026\retos\reto_01\coche.h
+	<string>
+	"vehiculo.h"
+
+1772688092 source:c:\users\ihiz2\programación_c++\code\programacion_2026\retos\reto_01\moto.cpp
+	"moto.h"
+	<iostream>
+
+1772688047 c:\users\ihiz2\programación_c++\code\programacion_2026\retos\reto_01\moto.h
+	<string>
+	"vehiculo.h"
+
+1772687954 source:c:\users\ihiz2\programación_c++\code\programacion_2026\retos\reto_01\vehiculo.cpp
+	"vehiculo.h"
+	<iostream>
+
+1772689335 source:c:\users\ihiz2\programación_c++\code\programacion_2026\retos\reto_01\funcionesdeutilidad.cpp
+	<iostream>
+	<string>
+	"coche.h"
+	"moto.h"
+	"camion.h"
+	"autobus.h"
+	<vector>
+	"funcionesDeUtilidad.h"
+
+1772689751 c:\users\ihiz2\programación_c++\code\programacion_2026\retos\reto_01\funcionesdeutilidad.h
+	<string>
+	"coche.h"
+	"moto.h"
+	"camion.h"
+	"autobus.h"
+	<vector>
+
+1772689565 source:c:\users\ihiz2\programación_c++\code\programacion_2026\retos\reto_01\main.cpp
+	<iostream>
+	<locale>
+	<string>
+	"coche.h"
+	"moto.h"
+	"camion.h"
+	"autobus.h"
+	<vector>
+	"funcionesDeUtilidad.h"
+
