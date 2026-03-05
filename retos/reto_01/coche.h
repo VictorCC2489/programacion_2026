@@ -12,7 +12,7 @@ private:
 public:
     // Constructores
     Coche();
-    Coche(string marca, string modelo, int anio, int numeroPuertas);
+    Coche(string marca, string modelo, int anio, string placa, int numeroPuertas);
 
     // Métodos para actualizar
     void actualizarNumeroPuertas(int nuevoNumero);

@@ -1,24 +1,27 @@
 #include <iostream>
+#include "vehiculo.h"
 #include "coche.h"
 #include "moto.h"
 #include "camion.h"
 #include "autobus.h"
+#include <locale>
 
 using namespace std;
 
 int main() {
+    setlocale(LC_ALL, "en_US.UTF-8");
 
     // crear vehículos
-    Coche coche1("Toyota", "Corolla", 2020, 4);
+    Coche coche1("Toyota", "Corolla", 2020, "4", 4);
     coche1.actualizarPlaca("ABC-123");
 
-    Moto moto1("Yamaha", "R3", 2022, 321);
+    Moto moto1("Yamaha", "R3", 2022, "4", 321);
     moto1.actualizarPlaca("MTR-456");
 
-    Camion camion1("Volvo", "FH16", 2018, 2);
+    Camion camion1("Volvo", "FH16", 2018, "4", 2);
     camion1.actualizarPlaca("CAM-789");
 
-    Autobus autobus1("Mercedes", "Sprinter", 2021, "ADO");
+    Autobus autobus1("Mercedes", "Sprinter", 2021, "4", "ADO");
     autobus1.actualizarPlaca("BUS-321");
 
     int opcion;

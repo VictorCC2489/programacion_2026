@@ -8,8 +8,8 @@ Coche::Coche() : Vehiculo() {
 }
 
 // Constructor con parámetros: pasa los datos del vehículo a la base
-Coche::Coche(string marca, string modelo, int anio, int numeroPuertas)
-    : Vehiculo(marca, modelo, anio) {
+Coche::Coche(string marca, string modelo, int anio, string placa,  int numeroPuertas)
+    : Vehiculo(marca, modelo, anio, placa) {
     this->numeroPuertas = numeroPuertas;
 }
 

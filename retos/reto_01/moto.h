@@ -13,7 +13,7 @@ private:
 public:
     // Constructores
     Moto();
-    Moto(string marca, string modelo, int anio, int cilindraje);
+    Moto(string marca, string modelo, int anio, string placa, int cilindraje);
 
     // Métodos para actualizar
     void actualizarCilindraje(int nuevoCilindraje);

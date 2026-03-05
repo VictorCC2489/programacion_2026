@@ -1,0 +1,36 @@
+# depslib dependency file v1.0
+1772462690 source:c:\users\ihiz2\programación_c++\code\programacion_2026\retos\reto_01\coche.cpp
+	"coche.h"
+	<iostream>
+
+1772462770 c:\users\ihiz2\programación_c++\code\programacion_2026\retos\reto_01\coche.h
+	<string>
+	"vehiculo.h"
+
+1772458797 c:\users\ihiz2\programación_c++\code\programacion_2026\retos\reto_01\vehiculo.h
+	<string>
+
+1772673740 source:c:\users\ihiz2\programación_c++\code\programacion_2026\retos\reto_01\autobus.cpp
+	"autobus.h"
+	<iostream>
+
+1772462931 c:\users\ihiz2\programación_c++\code\programacion_2026\retos\reto_01\autobus.h
+	<string>
+	"vehiculo.h"
+
+1772673706 source:c:\users\ihiz2\programación_c++\code\programacion_2026\retos\reto_01\camion.cpp
+	"camion.h"
+	<iostream>
+
+1772462931 c:\users\ihiz2\programación_c++\code\programacion_2026\retos\reto_01\camion.h
+	<string>
+	"vehiculo.h"
+
+1772673590 source:c:\users\ihiz2\programación_c++\code\programacion_2026\retos\reto_01\moto.cpp
+	"moto.h"
+	<iostream>
+
+1772462896 c:\users\ihiz2\programación_c++\code\programacion_2026\retos\reto_01\moto.h
+	<string>
+	"vehiculo.h"
+
