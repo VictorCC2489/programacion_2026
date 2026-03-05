@@ -18,7 +18,7 @@ void Autobus::actualizarCompania(string nuevaCompania) {
     compania = nuevaCompania;
 }
 
-// Sobrescritura: reutiliza el método de la base y añade información del coche
+// Sobrescritura: reutiliza el método de la base y añade información del autobus
 void Autobus::mostrarInformacion() {
     Vehiculo::mostrarInformacion();
     cout << "Compania: " << compania << endl;
