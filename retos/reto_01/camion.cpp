@@ -21,7 +21,7 @@ void Camion::actualizarCargaEstimada(int nuevaCarga){
 // Sobrescritura: reutiliza el método de la base y añade información del camión
 void Camion::mostrarInformacion() {
     Vehiculo::mostrarInformacion();
-    cout << "Remolques del camión: " << cargaEstimada << endl;
+    cout << "Carga estimada del camión: " << cargaEstimada << endl;
 }
 
 // Getter
