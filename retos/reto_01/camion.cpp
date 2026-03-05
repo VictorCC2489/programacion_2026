@@ -9,7 +9,7 @@ Camion::Camion() : Vehiculo() {
 
 // Constructor con parámetros: pasa los datos del vehículo a la base
 Camion::Camion(string marca, string modelo, int anio, string placa, int cargaEstimada)
-    : Vehiculo(marca, modelo, anio) {
+    : Vehiculo(marca, modelo, anio, placa) {
     this->cargaEstimada = cargaEstimada;
 }
 

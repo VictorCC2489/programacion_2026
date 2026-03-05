@@ -9,7 +9,7 @@ Autobus::Autobus() : Vehiculo() {
 
 // Constructor con parámetros: pasa los datos del vehículo a la base
 Autobus::Autobus(string marca, string modelo, int anio, string placa, string compania)
-    : Vehiculo(marca, modelo, anio) {
+    : Vehiculo(marca, modelo, anio, placa) {
     this->compania = compania;
 }
 

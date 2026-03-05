@@ -9,7 +9,7 @@ Moto::Moto() : Vehiculo() {
 
 // Constructor con parámetros: pasa los datos del vehículo a la base
 Moto::Moto(string marca, string modelo, int anio, string placa, int cilindraje)
-    : Vehiculo(marca, modelo, anio) {
+    : Vehiculo(marca, modelo, anio, placa) {
     this->cilindraje = cilindraje;
 }
 
