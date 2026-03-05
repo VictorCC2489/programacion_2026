@@ -24,4 +24,4 @@ public:
     string obtenerCompania();
 };
 
-#endif // COCHE_H
+#endif // AUTOBUS_H
