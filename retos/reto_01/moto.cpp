@@ -18,7 +18,7 @@ void Moto::actualizarCilindraje(int nuevoCilindraje) {
     cilindraje = nuevoCilindraje;
 }
 
-// Sobrescritura: reutiliza el método de la base y añade información del coche
+// Sobrescritura: reutiliza el método de la base y añade información de la moto
 void Moto::mostrarInformacion() {
     Vehiculo::mostrarInformacion();
     cout << "Cilindraje: " << cilindraje << "cc o ";
