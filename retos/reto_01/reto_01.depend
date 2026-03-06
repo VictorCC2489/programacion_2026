@@ -38,8 +38,10 @@
 	"vehiculo.h"
 	<iostream>
 
-1772689335 source:c:\users\ihiz2\programación_c++\code\programacion_2026\retos\reto_01\funcionesdeutilidad.cpp
+1772810048 source:c:\users\ihiz2\programación_c++\code\programacion_2026\retos\reto_01\funcionesdeutilidad.cpp
+	<windows.h>
 	<iostream>
+	<locale>
 	<string>
 	"coche.h"
 	"moto.h"
@@ -48,7 +50,7 @@
 	<vector>
 	"funcionesDeUtilidad.h"
 
-1772689751 c:\users\ihiz2\programación_c++\code\programacion_2026\retos\reto_01\funcionesdeutilidad.h
+1772720381 c:\users\ihiz2\programación_c++\code\programacion_2026\retos\reto_01\funcionesdeutilidad.h
 	<string>
 	"coche.h"
 	"moto.h"
@@ -56,7 +58,8 @@
 	"autobus.h"
 	<vector>
 
-1772689565 source:c:\users\ihiz2\programación_c++\code\programacion_2026\retos\reto_01\main.cpp
+1772810127 source:c:\users\ihiz2\programación_c++\code\programacion_2026\retos\reto_01\main.cpp
+	<windows.h>
 	<iostream>
 	<locale>
 	<string>

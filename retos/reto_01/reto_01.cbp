@@ -37,6 +37,8 @@
 		<Unit filename="camion.h" />
 		<Unit filename="coche.cpp" />
 		<Unit filename="coche.h" />
+		<Unit filename="funcionesDeUtilidad.cpp" />
+		<Unit filename="funcionesDeUtilidad.h" />
 		<Unit filename="main.cpp" />
 		<Unit filename="moto.cpp" />
 		<Unit filename="moto.h" />

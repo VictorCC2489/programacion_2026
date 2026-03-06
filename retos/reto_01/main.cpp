@@ -1,3 +1,4 @@
+#include <windows.h>
 #include <iostream>
 #include <locale>
 #include <string>
@@ -11,7 +12,7 @@
 using namespace std;
 
 int main() {
-    setlocale(LC_ALL, "en_US.UTF-8");
+    setlocale(LC_ALL, "Spanish_Mexico.1252");
     // crear vehículos
     vector<Coche>PlacasCoche;
     vector<Moto>PlacasMoto;
@@ -44,12 +45,12 @@ int main() {
                 break;
 
             case 2:
-                solicitudDplaca();
+                solicitudDplaca(PlacasCoche, PlacasMoto, PlacasCamion, PlacasAutobus);
 
                 break;
 
             case 3:
-                cambioDplaca();
+                cambioDplaca(PlacasCoche, PlacasMoto, PlacasCamion, PlacasAutobus);
 
                 break;
 
