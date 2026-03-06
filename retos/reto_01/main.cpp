@@ -19,9 +19,6 @@ int main() {
     vector<Camion>PlacasCamion;
     vector<Autobus>PlacasAutobus;
 
-    Coche Coche_nuevo("abs", "1234", 12, "1231421", 4);
-    PlacasCoche.push_back(Coche_nuevo);
-
     int opcion;
     string nuevaPlaca;
 
