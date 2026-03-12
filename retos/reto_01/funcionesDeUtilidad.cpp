@@ -216,7 +216,67 @@ void solicitudMoto(vector<Moto>& PlacasMoto){
 }
 
 void solicitudCamion(vector<Camion>& PlacasCamion){
+    string vigencia, tipoLicencia, facturaAcreedora, CURP, ClaveElector, marca, modelo, placa;
+    int numLicencia, numPoliza, anio, cargaEstimada;
 
+    cout<<"Ingresa la vigencia de la licencia:";
+    cin >> vigencia;
+    cout<<endl;
+    cout<<"Ingresa el número de la licencia";
+    cin >> numLicencia;
+    cout<<endl;
+    cout<<"Ingresa el tipo de licencia con el que cuente (A, A1, A2, B, C o E): ";
+    cin >> tipoLicencia;
+    cout<<endl;
+
+    while (tipoLicencia != "A1" && tipoLicencia != "A2" && tipoLicencia != "0"){
+        cout<<"Licencia no válida para acreditar una placa, ingrese de nuevo y si no cuenta con una licencia de tipo A1 o A2 escriba 0"<<endl;
+        cout<<"Ingrese nuevamente el tipo de licencia: ";
+        cin >> tipoLicencia;
+        cout<<endl;
+        if (tipoLicencia == "0"){
+            cout<<"Solicitud de placa no aprovada"<<endl;
+            return;
+        }
+
+    }
+
+    cout<<"Ingresa el número de la póliza de seguro: ";
+    cin >> numPoliza;
+
+    cout<<"Ingrese la factura que acridite su posecion del vehículo: ";
+    cin >> facturaAcreedora;
+
+    cout<<"Ingresa tu INE (ya que no se procesar imagenes solo escribe tu CURP y tu clave de elector)"<<endl;
+    cout<<"CURP: ";
+    cin >> CURP;
+    cout<<endl;
+    cout<<"Clave de elector: ";
+    cin >> ClaveElector;
+    cout<<endl;
+
+
+    cout<<"Datos verificados, a continuacin escribiras los siguientes datos respecto al vehículo"<<endl;
+    cout<<"Ingresa la marca de la moto: ";
+    cin >> marca;
+    cout<<endl;
+
+    cout<<"Ingresa el modelo de la moto: ";
+    cin >> modelo;
+    cout<<endl;
+
+    cout<<"Ingresa el año de la moto: ";
+    cin >> anio;
+    cout<<endl;
+
+    cout<<"Ingresa la placa que se le asignara a la moto (finjamos que estamos en ciudad de México porque no pienso aleatorizar placas (todavía)): ";
+    cin >> placa;
+    cout<<endl;
+
+    Camion nuevo_camion(marca, modelo, anio, placa, cargaEstimada);
+    PlacasCamion.push_back(nueva_moto);
+    cout<<"Se a registrado con exito el camion"<<endl;
+    linea();
 }
 
 void solicitudAutobus(vector<Autobus>& PlacasAutobus){
