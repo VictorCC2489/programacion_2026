@@ -1,0 +1,34 @@
+# depslib dependency file v1.0
+1773710080 source:c:\users\ihiz2\programación_c++\code\programacion_2026\ejercicio_03_polimorfismos\ejercicio_03_polimorfismos\circulo.cpp
+	"circulo.h"
+	<iostream>
+	<string>
+	<cmath>
+
+1773709058 c:\users\ihiz2\programación_c++\code\programacion_2026\ejercicio_03_polimorfismos\ejercicio_03_polimorfismos\circulo.h
+	<string>
+	"Figura.h"
+
+1773426774 c:\users\ihiz2\programación_c++\code\programacion_2026\ejercicio_03_polimorfismos\ejercicio_03_polimorfismos\figura.h
+	<string>
+
+1773427090 source:c:\users\ihiz2\programación_c++\code\programacion_2026\ejercicio_03_polimorfismos\ejercicio_03_polimorfismos\figura.cpp
+	"Figura.h"
+	<iostream>
+	<string>
+
+1773709549 source:c:\users\ihiz2\programación_c++\code\programacion_2026\ejercicio_03_polimorfismos\ejercicio_03_polimorfismos\main-figuras.cpp
+	<iostream>
+	"Figura.h"
+	"circulo.h"
+	"rectangulo.h"
+
+1773710272 c:\users\ihiz2\programación_c++\code\programacion_2026\ejercicio_03_polimorfismos\ejercicio_03_polimorfismos\rectangulo.h
+	<string>
+	"Figura.h"
+
+1773710535 source:c:\users\ihiz2\programación_c++\code\programacion_2026\ejercicio_03_polimorfismos\ejercicio_03_polimorfismos\rectangulo.cpp
+	"rectangulo.h"
+	<iostream>
+	<string>
+
