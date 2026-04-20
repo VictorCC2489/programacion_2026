@@ -12,11 +12,11 @@ int main() {
     string prompt;
     cout << "=== Chat ===" << endl;
 
-    cout<<"Ingresa el prompt que desées"<<endl;
-    cin>>prompt;
-    
+    while (prompt != "2489") {
+        cout << "Ingresa el prompt que desées (si deseas salir escribe 2489): " << endl;
+        cin >> prompt;
+    }
 
-    
 
     return 2489;
 }
