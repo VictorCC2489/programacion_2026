@@ -3,6 +3,7 @@
 #include <vector>
 #include <ctime>
 #include "mensaje.h"
+#include <fstream>
 
 #include <string>
 
@@ -49,6 +50,22 @@ vector<Mensaje> Conversacion::obtenerMensajes(){
 //Funciones de utilidad
 
 void Conversacion::guardarMensajes (){
-    // Implementación para guardar mensajes
+    ofstream archivo("mensajes.txt", ios::app);
+    
+    if (archivo.is_open()) {
+        if (mensajes.size() > 0) {
+            Mensaje ultimoMensaje = mensajes[mensajes.size() - 1];
+            
+            archivo << "--- Mensaje " << mensajes.size() << " ---" << endl;
+            archivo << "Prompt: " << ultimoMensaje.obtenerPrompt() << endl;
+            archivo << "Fecha Prompt: " << ultimoMensaje.obtenerFechaPrompt() << endl;
+            archivo << "Hora Prompt: " << ultimoMensaje.obtenerHoraPrompt() << endl;
+            archivo << "Salida: " << ultimoMensaje.obtenerSalida() << endl;
+            archivo << "Fecha Salida: " << ultimoMensaje.obtenerFechaSalida() << endl;
+            archivo << "Hora Salida: " << ultimoMensaje.obtenerHoraSalida() << endl;
+            archivo << "---" << endl << endl;
+        }
+        archivo.close();
+    }
 }
 
